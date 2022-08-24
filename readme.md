@@ -2,6 +2,9 @@
 
 Network Media Library is a plugin for WordPress Multisite which provides a central media library that's shared across all sites on the Multisite network.
 
+## A note about this fork
+I made this because it seems the original repo is no longer maintained as far as I can tell. I basically just implemented a few bugfixes that were not getting merged into the main repository. Feel free to use this fork in your projects.
+
 ## Description
 
 This small plugin transparently shares media from one central media library site to all the other sites on the network. All media that's uploaded gets transparently directed to the central media site, and subsequently made available network-wide. Nothing is copied, cloned, synchronised, or mirrored, so for each file that's uploaded there's only one attachment and one copy of the file.
@@ -13,9 +16,26 @@ This small plugin transparently shares media from one central media library site
 
 ## Installation
 
-The plugin is available as a [Composer package](https://packagist.org/packages/humanmade/network-media-library).
+**As a composer package:**
 
-    composer require humanmade/network-media-library
+Add this to your project's composer.json under repositories:
+```json
+{
+    "type": "package",
+    "package": {
+        "name": "broskees/network-media-library",
+        "version": "master",
+        "type": "wordpress-muplugin",
+        "source": {
+            "url": "https://github.com/broskees/network-media-library",
+            "type": "git",
+            "reference": "master"
+        }
+    }
+}
+```
+
+    composer require broskees/network-media-library dev-master
 
 If you don't use Composer, install the plugin as you would normally.
 
