@@ -475,7 +475,7 @@ class ACF_Value_Filter {
 	}
 
 	/**
-	 * Fiters the optionally formatted value when using field retrieval functions in Advanced Custom Fields.
+	 * Filters the optionally formatted value when using field retrieval functions in Advanced Custom Fields.
 	 *
 	 * @param mixed      $value   The field value.
 	 * @param int|string $post_id The post ID for this value.
