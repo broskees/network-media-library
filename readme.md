@@ -27,7 +27,7 @@ Add this to your project's composer.json under repositories:
         "version": "master",
         "type": "wordpress-muplugin",
         "source": {
-            "url": "https://github.com/broskees/network-media-library",
+            "url": "https://github.com/broskees/network-media-library.git",
             "type": "git",
             "reference": "master"
         }

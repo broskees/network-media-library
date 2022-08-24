@@ -31,5 +31,10 @@
     "phpcompatibility/php-compatibility": "~8.2",
     "squizlabs/php_codesniffer": "^3.2",
     "wp-coding-standards/wpcs": "^1"
+  },
+  "config": {
+    "allow-plugins": {
+      "composer/installers": true
+    }
   }
 }
